@@ -6,8 +6,12 @@ function insert (ch, table, obj) {
 		const values = []
 
 		for (const key in obj) {
+			let value = escape(obj[key]);
+			if (value == null) {
+				continue;
+			}
 			keys.push(key)
-			values.push(escape(obj[key]))
+			values.push(value)
 		}
 
 		const query = `insert into ${table}(${keys.join(',')}) values (${values.join(',')})`
