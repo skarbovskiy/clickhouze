@@ -5,7 +5,7 @@ Naive clickhouse client
 ### Installation
 
 ```
-npm i clickhouze
+npm i node-clickhouze
 ```
 
 ### Usage
