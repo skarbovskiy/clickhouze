@@ -27,7 +27,7 @@ module.exports = function createClient (config) {
 				if (err || res.statusCode !== 200) {
 					return cb(err || new Error(res.body))
 				}
-				cb(res)
+				cb(null, res)
 			})
 		}
 	}
