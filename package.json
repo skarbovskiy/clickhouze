@@ -11,8 +11,8 @@
   "dependencies": {
     "request": "2.88.0"
   },
-	"repository": {
-		"type" : "git",
-		"url" : "https://github.com/skarbovskiy/clickhouze.git"
-	}
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/skarbovskiy/clickhouze.git"
+  }
 }
