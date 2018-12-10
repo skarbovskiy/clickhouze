@@ -1,6 +1,6 @@
 {
   "name": "node-clickhouze",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Naive clickhouse client wrapper",
   "main": "index.js",
   "scripts": {
