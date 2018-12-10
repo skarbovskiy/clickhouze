@@ -1,6 +1,6 @@
 {
   "name": "node-clickhouze",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Naive clickhouse client wrapper",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "request": "2.88.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/skarbovskiy/clickhouze.git"
   }
 }
