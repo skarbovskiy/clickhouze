@@ -86,7 +86,7 @@ function querySingle (ch, sql) {
 
 function escape (val) {
 	if (Array.isArray(val)) {
-		return '[' + val.map(i => typeof 'string' ?`'${i}'` : i).join(', ').replace(/\\/g, '\\\\').replace(/'/g, '\\\'') + ']';
+		return '[' + val.map(i => typeof 'string' ?`'${i}'` : i).join(', ') + ']';
 	}
 	if (typeof val === 'string') {
 		return "'" + val.replace(/\\/g, '\\\\').replace(/'/g, '\\\'') + "'"
