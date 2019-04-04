@@ -53,6 +53,9 @@ function query (ch, sql) {
 			if (err) {
 				reject(err)
 			} else {
+				if (!res.body) {
+					resolve();
+				}
 				try {
 					resolve(JSON.parse(res.body).data)
 				} catch (e) {
