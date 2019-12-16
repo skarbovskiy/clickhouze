@@ -97,6 +97,11 @@ function escape (val) {
 	return val
 }
 
+function queryJSONStream (ch, sql) {
+	sql += ' format JSON'
+	return ch.stream(sql)
+}
+
 module.exports = function buildClient (config) {
 	const ch = new ClickHouse(config)
 
@@ -107,5 +112,6 @@ module.exports = function buildClient (config) {
 		query: query.bind(null, ch),
 		queryRaw: queryRaw.bind(null, ch),
 		querySingle: querySingle.bind(null, ch),
+		queryJSONStream: queryJSONStream.bind(null, ch),
 	}
 }

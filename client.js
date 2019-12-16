@@ -29,6 +29,10 @@ module.exports = function createClient (config) {
 				}
 				cb(null, res)
 			})
+		},
+		stream: (queryText) => {
+			clickhouseParams.body = queryText
+			return request(clickhouseParams)
 		}
 	}
 }
