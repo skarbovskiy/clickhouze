@@ -6,10 +6,10 @@ function insert (ch, table, obj) {
 		const values = []
 
 		for (const key in obj) {
-			let value = escape(obj[key]);
-			if (value == null) {
+			if (obj[key] == null) {
 				continue;
 			}
+			let value = escape(obj[key]);
 			keys.push(key)
 			values.push(value)
 		}
@@ -88,6 +88,9 @@ function querySingle (ch, sql) {
 }
 
 function escape (val) {
+	if (val === null) {
+		return "'" + '\\N' + "'";
+	}
 	if (Array.isArray(val)) {
 		return '[' + val.map(i => typeof 'string' ?`'${i}'` : i).join(', ') + ']';
 	}

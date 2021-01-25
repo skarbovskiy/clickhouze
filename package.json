@@ -1,6 +1,6 @@
 {
   "name": "node-clickhouze",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "Naive clickhouse client wrapper",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "request": "2.88.0"
+    "request": "2.88.2"
   },
   "repository": {
     "type" : "git",
